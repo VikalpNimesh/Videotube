@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { registerUser } from "../controllers/user.controller.js";
 const router = Router();
+import {upload} from "../middlewares/multer.middleware.js"
 
 // Move the upload middleware into the route definition
 router.route("/register").post(
